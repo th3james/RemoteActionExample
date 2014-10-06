@@ -21,5 +21,5 @@ window.RemoteHelpers =
 
   onDataAction: (dataAction, eventName, handler) ->
     $(document).on("ready page:load", ->
-      $('#main').delegate("[data-action=\"#{dataAction}\"]", eventName, handler)
+      $('body').delegate("[data-action=\"#{dataAction}\"]", eventName, handler)
     )
