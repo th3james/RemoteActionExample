@@ -6,6 +6,11 @@ body {
   padding: 0 20px;
 }
 
+table td, table th {
+  border: 1px solid #AAA;
+  padding: 5px;
+}
+
 .modal-content {
   padding: 5px 15px;
 }
