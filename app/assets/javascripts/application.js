@@ -15,6 +15,7 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require remote-helpers
+//= require updateable-views
 //= require remote-action
 //= require remote-confirm
 //= require remote-modal-view
