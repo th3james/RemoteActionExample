@@ -7,6 +7,11 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
+  def partial_index
+    @tasks = Task.all
+    render partial: 'tasks/tasks'
+  end
+
   # GET /tasks/1
   # GET /tasks/1.json
   def show
