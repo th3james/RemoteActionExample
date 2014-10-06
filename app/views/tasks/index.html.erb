@@ -22,4 +22,7 @@
 
 <br>
 
-<%= link_to 'New Task', new_task_path %>
+<a data-action="remote_modal"
+   data-modal-url="<%= new_task_path %>">
+  New Task
+</a>
