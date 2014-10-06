@@ -9,6 +9,13 @@
           Edit
         </a>
       </td>
-      <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td>
+        <a data-action="remote_confirm"
+           data-remote-url=<%= task_path(task) %>
+           data-remote-method="delete"
+           data-mutates-models="tasks">
+           Destroy
+         </a>
+      </td>
     </tr>
   <% end %>
