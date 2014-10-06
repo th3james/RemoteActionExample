@@ -2,7 +2,13 @@
     <tr>
       <td><%= task.name %></td>
       <td><%= link_to 'Show', task %></td>
-      <td><%= link_to 'Edit', edit_task_path(task) %></td>
+      <td>
+        <a data-action="remote_modal"
+           data-modal-url=<%= edit_task_path(task) %>
+           data-mutates-models="tasks">
+          Edit
+        </a>
+      </td>
       <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
